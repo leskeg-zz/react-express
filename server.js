@@ -3,7 +3,7 @@ const path = require('path')
 const app = express()
 const port = (process.env.PORT || 8080)
 
-app.get('/test', (req, res) => res.send('test'))  
+app.get('/test', (req, res) => res.send('test'))
 
 if (process.env.NODE_ENV !== 'production') {
   const webpack = require('webpack')
